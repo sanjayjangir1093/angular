@@ -32,12 +32,12 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t sanjay-angular .
+          docker build -t angular .
 
       - name: Tag Docker image
         run: |
-          docker tag sanjay-angular:latest 767397865179.dkr.ecr.ap-south-1.amazonaws.com/sanjay-angular:latest
+          docker tag angular:latest 767397865179.dkr.ecr.ap-south-1.amazonaws.com/angular:latest
 
       - name: Push Docker image to ECR
         run: |
-          docker push 767397865179.dkr.ecr.ap-south-1.amazonaws.com/sanjay-angular:latest
+          docker push 767397865179.dkr.ecr.ap-south-1.amazonaws.com/angular:latest
